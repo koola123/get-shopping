@@ -28,9 +28,9 @@ Get the API Url ---> https://fakestoreapi.com/
 
 
 ## Future improvements
-* Implement a payment process (EC-Card, CreditCard, Paypal) 
+* Implement a payment process (EC-Card, CreditCard, Paypal)
 * Login and Logout function
-* Replacing the fake API with a real database.
+* Replacing the fake API with a real database
 
 
 
