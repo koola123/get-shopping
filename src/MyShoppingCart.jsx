@@ -12,7 +12,7 @@ import { Hero } from './components/hero';
 import { Product } from './components/product';
 import { Sidebar } from './components/sidebar';
 
-export const App = () => {
+export const MyShoppingCart = () => {
   return (
     <div className="overflow-hidden">
       <BrowserRouter>
