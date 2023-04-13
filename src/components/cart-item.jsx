@@ -2,11 +2,11 @@ import React from 'react';
 // import link
 import { Link } from 'react-router-dom';
 // import icons
-import { IoMdClose, IoMdRemove } from 'react-icons/io';
+import { IoMdClose, IoMdRemove, IoMdAdd } from 'react-icons/io';
 
 export const CartItem = ({ item }) => {
   // destructure the item
-  const {id, title, image, price, amount} = item;
+  const { id, title, image, price, amount } = item;
   return (
     <div className="flex">
     <div className="w-full min-h-[150px] flex items-center gap-x-4 ">
@@ -36,9 +36,18 @@ export const CartItem = ({ item }) => {
         </div>
         <div className="bg-orange-200 flex gap-x-2 h-[36px] text-sm ">
           {/* qty */}
-          <div>
+          <div className="flex flex-1 max-w-[100px] bg-blue-400 items-center 
+          h-full border text-primary font-medium">
             {/* minus icon */}
+            <div className="flex-1">
             <IoMdRemove/>
+            </div>
+            {/* amount */}
+            <div className="h-full flex justify-center items-center px-2">{amount}</div>
+            {/* plus icon */}
+            <div className="flex-1 h-full flex justify-center items-center cursor-pointer">
+              <IoMdAdd />
+            </div>
           </div>
            {/* item price */}
            <div>item price</div>
