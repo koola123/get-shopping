@@ -12,12 +12,21 @@ import { Hero } from './components/hero';
 import { Product } from './components/product';
 import { Sidebar } from './components/sidebar';
 
-
-
 export const App = () => {
   return (
     <div className="overflow-hidden">
-      react app
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+          path="/"
+          element={<Home/>}
+           />
+           <Route
+           path="/product/:id"
+           element={<ProductDetails/>}
+           />
+        </Routes>
+      </BrowserRouter>
+      </div>
   );
 };

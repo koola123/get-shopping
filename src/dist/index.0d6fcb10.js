@@ -27175,10 +27175,39 @@ var _sidebar = require("./components/sidebar");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "overflow-hidden",
-        children: "react app"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _home.Home), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/product/:id",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productDetails.ProductDetails), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 24,
+                        columnNumber: 12
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.jsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 18,
+            columnNumber: 7
+        }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 19,
+        lineNumber: 17,
         columnNumber: 5
     }, undefined);
 };
