@@ -1,11 +1,12 @@
-import { createRoot } from 'react-dom/client';
-
+import React from 'react';
+import { createRoot } from 'react-dom/client
+import { App } from './App';
 import './index.css';
 
 const MyShoppingCart = () => {
   return (
     <div>
-      <h1 class="">Let's Go Shopping!</h1>
+      <App title="Hello world" />
     </div>
   );
 }
