@@ -1,16 +1,17 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client
-import { App } from './App';
+import { createRoot } from 'react-dom/client';
 import './index.css';
+import { App } from './App';
+// import Product Provider
+import { ProductProvider } from './contexts/product-context';
 
-const MyShoppingCart = () => {
-  return (
-    <div>
-      <App title="Hello world" />
-    </div>
-  );
-}
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<MyShoppingCart/>);
+root.render(
+  <ProductProvider>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+  </ProductProvider>
+);

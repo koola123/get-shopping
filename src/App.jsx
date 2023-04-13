@@ -16,6 +16,7 @@ export const App = () => {
   return (
     <div className="overflow-hidden">
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route
           path="/"
@@ -26,6 +27,8 @@ export const App = () => {
            element={<ProductDetails/>}
            />
         </Routes>
+        <Sidebar />
+        <Footer/>
       </BrowserRouter>
       </div>
   );
