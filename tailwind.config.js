@@ -7,10 +7,10 @@ module.exports = {
       },
       container: {
         padding: {
-          DEFAULT: '50px',
+          DEFAULT: '30px',
           lg: '0',
-          xl: '50px',
-          xxl: '50px'
+          xl: '30px',
+          xxl: '30px'
         },
       },
       screens: {
