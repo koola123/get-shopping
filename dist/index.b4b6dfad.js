@@ -2929,8 +2929,8 @@ var _client = require("react-dom/client");
 var _indexCss = require("./index.css");
 const MyShoppingCart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            class: "",
             children: "Let's Go Shopping!"
         }, void 0, false, {
             fileName: "src/index.jsx",

@@ -4,8 +4,8 @@ import './index.css';
 
 const MyShoppingCart = () => {
   return (
-    <div className="container">
-      <h1>Let's Go Shopping!</h1>
+    <div>
+      <h1 class="">Let's Go Shopping!</h1>
     </div>
   );
 }
