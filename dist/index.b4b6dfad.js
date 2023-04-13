@@ -2929,7 +2929,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
-var _indexCss = require("./index.css");
+var _indexScss = require("./index.scss");
 var _app = require("./App");
 // import Product Provider
 var _productContext = require("./contexts/product-context");
@@ -2958,7 +2958,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productContext.Product
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./index.css":"irmnC","./App":"e9Zfo","./contexts/product-context":"bemO9","@parcel/transformer-js/src/esmodule-helpers.js":"aRELh","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"6ZIFf"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./index.scss":"lJZlQ","./App":"e9Zfo","./contexts/product-context":"bemO9","@parcel/transformer-js/src/esmodule-helpers.js":"aRELh","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"6ZIFf"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("1695b2928b7c8f93");
 
@@ -27143,7 +27143,7 @@ module.exports = require("adec3a9ddbe616a9");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"irmnC":[function() {},{}],"e9Zfo":[function(require,module,exports) {
+},{}],"lJZlQ":[function() {},{}],"e9Zfo":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2430 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32454,16 +32454,21 @@ const Home = ()=>{
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "container mx-auto",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: filteredProducts.map((product)=>{
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: product.title
-                        }, product.id, false, {
-                            fileName: "src/pages/home.jsx",
-                            lineNumber: 21,
-                            columnNumber: 22
-                        }, undefined);
-                    })
-                }, void 0, false, {
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[30px]",
+                    children: [
+                        filteredProducts.map((product)=>{
+                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-full h-[300px] bg-orange-200 mb-4",
+                                children: product.title
+                            }, product.id, false, {
+                                fileName: "src/pages/home.jsx",
+                                lineNumber: 22,
+                                columnNumber: 17
+                            }, undefined);
+                        }),
+                        ";"
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/home.jsx",
                     lineNumber: 19,
                     columnNumber: 11
