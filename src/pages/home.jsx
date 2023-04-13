@@ -9,12 +9,20 @@ export const Home = () => {
   const filteredProducts = products.filter(item => {
     return (
       item.category === "men's clothing" || item.category === "women's clothing" || item.category === "jewelery"
-    )
+    );
   });
 
   return (
     <div>
-      Homepage
+      <section className="py-16">
+        <div className="container mx-auto">
+          <div>
+            {filteredProducts.map((product) => {
+              return <div key={product.id}>{product.title}</div>
+            })}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

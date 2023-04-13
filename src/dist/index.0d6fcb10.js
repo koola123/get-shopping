@@ -32582,7 +32582,35 @@ const Home = ()=>{
         return item.category === "men's clothing" || item.category === "women's clothing" || item.category === "jewelery";
     });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "Homepage"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+            className: "py-16",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container mx-auto",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: filteredProducts.map((product)=>{
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: product.title
+                        }, product.id, false, {
+                            fileName: "src/pages/home.jsx",
+                            lineNumber: 21,
+                            columnNumber: 22
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/pages/home.jsx",
+                    lineNumber: 19,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/home.jsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/pages/home.jsx",
+            lineNumber: 17,
+            columnNumber: 7
+        }, undefined)
     }, void 0, false, {
         fileName: "src/pages/home.jsx",
         lineNumber: 16,
