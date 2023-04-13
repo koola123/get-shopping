@@ -371,6 +371,10 @@ body {
   width: 100%;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -401,6 +405,11 @@ body {
 
 .border {
   border-width: 1px;
+}
+
+.border-\[\#e4e4e4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(228 228 228 / var(--tw-border-opacity));
 }
 
 .bg-orange-200 {
@@ -475,6 +484,15 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .md\:max-w-none {
+    max-width: none;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
