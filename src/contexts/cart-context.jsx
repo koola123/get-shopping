@@ -28,11 +28,22 @@ export const CartProvider = ({ children }) => {
     }
   };
   console.log(cart)
-// useEffect(() => {
-//
-// }, []);
+
+  // remove from cart 
+  const removeFromCart = (id) => {
+    const newCart = cart.filter((item) => {
+      return item.id !== id;
+    });
+    setCart(newCart);
+  }
+
+  // clear cart 
+  const clearCart = () => {
+    setCart([]);
+  }
+
 
   return (
-    <CartContext.Provider value={{ addToCart, cart }}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>{children}</CartContext.Provider>
   );
 };
