@@ -1,7 +1,7 @@
 # GetShopping 🚀
 
-GetShopping is a ecommerce frontend solution that shows how selected fashion items can be added to an online shopping cart.
-The user can change the quantity at any time, add new items or delete items which affects the total purchase amount.
+GetShopping is a e-commerce frontend solution that shows exactly how fashion items can be added to an online shopping cart.
+The user can change the quantity, add new items to the cart or delete items which will affect the total sum.
 
 ## Key Features
 
@@ -10,7 +10,7 @@ The user can change the quantity at any time, add new items or delete items whic
 - Deleting items from the shopping cart.
 - Open the Product Details view for a specific item.
 
-## D E M O (npm install Node Modules after cloning the repo)
+## D E M O (npm install Node Modules after cloning the repo / npm i parcel -g to run on the client side)
 
 ```
 👉🏻 Run the app on localhost:1234
