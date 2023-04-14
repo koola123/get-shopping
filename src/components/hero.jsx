@@ -1,7 +1,7 @@
 import React from 'react';
-// import Images
+// import images
 import WomanImg from '../img/woman1-hero.png';
-// import Link
+// import link
 import { Link } from 'react-router-dom';
 
 export const Hero = () => {

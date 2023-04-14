@@ -3,7 +3,7 @@ import React, { useState, createContext } from 'react';
 export const SidebarContext = createContext();
 
 export const SidebarProvider = ({ children }) => {
-  // sidebar State
+  // sidebar state
   const [isOpen, setIsOpen] = useState(false);
   // handle sidebar
   const handleClose = () => {

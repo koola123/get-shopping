@@ -2,13 +2,12 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.scss';
 import { MyShoppingCart } from './MyShoppingCart';
-// import Product Provider
+// import product provider
 import { ProductProvider } from './contexts/product-context';
-// import Context Provider
+// import context provider
 import { SidebarProvider } from './contexts/sidebar-context';
-// import Cart Cart Provider
+// import cart provider
 import { CartProvider } from './contexts/cart-context';
-
 
 const container = document.getElementById('root');
 const root = createRoot(container);

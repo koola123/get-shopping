@@ -1,14 +1,15 @@
 import React, { useContext, useState, useEffect } from 'react';
-// Sidebar Context
+// import sidebar context
 import { SidebarContext } from '../contexts/sidebar-context';
-// import Icons
+// import icons
 import { BsBag } from 'react-icons/bs';
-// import Cart Context
+// import cart context
 import { CartContext } from '../contexts/cart-context';
-// imprt Link 
+// imprt link
 import { Link } from 'react-router-dom';
-// import Logo
+// import logo
 import Logo from '../img/logo.png';
+
 
 export const Header = () => {
   // header state
@@ -21,7 +22,6 @@ useEffect(() => {
   window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
  });
 },[]);
-
 
   return (
     <header className={`${isActive ? 'bg-white py-4 shadow-md' : 'bg-none py-4' }

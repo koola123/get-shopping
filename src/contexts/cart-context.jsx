@@ -1,14 +1,14 @@
 import React, { createContext, useState, useEffect } from 'react';
-
-// Create context
+// create context
 export const CartContext = createContext();
 
+
 export const CartProvider = ({ children }) => {
-  // Cart state
+  // cart state
   const [cart, setCart] = useState([]);
-  // Item amount state
+  // item amount state
   const [itemAmount, setItemAmount] = useState(0);
-  // Total price state
+  // total price state
   const [total, setTotal] = useState(0);
   useEffect(() => {
     const total = cart.reduce((accumulator, currentItem) => {
@@ -16,7 +16,7 @@ export const CartProvider = ({ children }) => {
     }, 0);
     setTotal(total);
   });
-  // Update item amount
+  // update item amount
   useEffect(() => {
     if (cart) {
       const amount = cart.reduce((accumulator, currentItem) => {
@@ -25,14 +25,14 @@ export const CartProvider = ({ children }) => {
       setItemAmount(amount);
     }
   }, [cart])
-  // Add to cart
+  // add to cart
   const addToCart = (product, id) => {
     const newItem = {...product, amount: 1}
     // check if the item is already in the cart
     const cartItem = cart.find((item) => {
       return item.id === id;
     });
-    // If cart item is already in the cart
+    // if cart item is already in the cart
     if (cartItem) {
       const newCart = [...cart].map((item) => {
         if (item.id === id) {
@@ -48,7 +48,7 @@ export const CartProvider = ({ children }) => {
   };
   console.log(cart)
 
-  // Remove from cart 
+  // remove from cart 
   const removeFromCart = (id) => {
     const newCart = cart.filter((item) => {
       return item.id !== id;
@@ -56,18 +56,18 @@ export const CartProvider = ({ children }) => {
     setCart(newCart);
   };
 
-  // Clear cart 
+  // clear cart 
   const clearCart = () => {
     setCart([]);
   };
 
-  // Increase amount 
+  // increase amount 
   const increaseAmount = (id) => {
     const cartItem = cart.find(item => item.id === id);
     addToCart(cartItem, id);
   };
 
-  // Decrease amount
+  // decrease amount
   const decreaseAmount = (id) => {
     const cartItem = cart.find((item) => {
       return item.id === id;

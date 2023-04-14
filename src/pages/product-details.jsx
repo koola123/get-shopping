@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 // import useParams
 import { useParams } from 'react-router-dom';
-// import Cart Context
+// import cart context
 import { CartContext } from '../contexts/cart-context';
-// import Product Context
+// import product context
 import { ProductContext } from '../contexts/product-context';
+
 
 export const ProductDetails = () => {
   // get the product id from the url
@@ -13,13 +14,12 @@ export const ProductDetails = () => {
   const {addToCart} = useContext(CartContext);
   const {products}= useContext(ProductContext);
 
-
-  // Get the single product based on the id
+  // get the single product based on the id
  const product = products.find((item) => {
     return item.id === parseInt(id);
  });
 
- // If product is not found
+ // if product is not found
  if (!product) {
   return (
     <section className="h-screen flex justify-center">
@@ -28,7 +28,7 @@ export const ProductDetails = () => {
   )
  }
 
- // Desctructure product
+ // desctructure product
  const { title, price, description, image } = product;
   return (
     <section className="pt-32 pb-12 lg:py-32 h-screen flex items-center">
@@ -42,12 +42,10 @@ export const ProductDetails = () => {
         {/* text */}
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-[26px] font-medium mb-2 max-w-[450px] mx-auto lg:mx-0">{title}</h1>
-          <div className="text-xl text-red-500 font-medium mb-6 text-left">$ {parseInt(price).toFixed(2)}</div>
+          <div className="text-xl text-orange-500 font-medium mb-6 text-left">$ {parseInt(price).toFixed(2)}</div>
           <div className="mb-8">{description}</div>
           <button onClick={() => addToCart(product, product.id)} className="bg-primary py-4 px-8 text-white ">Add to cart</button>
         </div>
-        
-        
         </div>
       </div>
     </section>
