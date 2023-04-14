@@ -1,19 +1,19 @@
 import React, { createContext, useState, useEffect } from 'react';
 
-//create context
+// Create context
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  // cart state
+  // Cart state
   const [cart, setCart] = useState([]);
-  // add to cart
+  // Add to cart
   const addToCart = (product, id) => {
     const newItem = {...product, amount: 1}
     // check if the item is already in the cart
     const cartItem = cart.find((item) => {
       return item.id === id;
     });
-    // if cart item is already in the cart
+    // If cart item is already in the cart
     if (cartItem) {
       const newCart = [...cart].map((item) => {
         if (item.id === id) {
@@ -29,21 +29,48 @@ export const CartProvider = ({ children }) => {
   };
   console.log(cart)
 
-  // remove from cart 
+  // Remove from cart 
   const removeFromCart = (id) => {
     const newCart = cart.filter((item) => {
       return item.id !== id;
     });
     setCart(newCart);
-  }
+  };
 
-  // clear cart 
+  // Clear cart 
   const clearCart = () => {
     setCart([]);
+  };
+
+  // Increase amount 
+  const increaseAmount = (id) => {
+    const cartItem = cart.find(item => item.id === id);
+    addToCart(cartItem, id);
+  };
+
+  // Decrease amount
+  const decreaseAmount = (id) => {
+    const cartItem = cart.find((item) => {
+      return item.id === id;
+    });
+    if (cartItem) {
+      const newCart = cart.map((item) => {
+        if (item.id === id) {
+          return {...item, amount: cartItem.amount - 1};
+        } else {
+          return item;
+        }
+      });
+    setCart(newCart);
+    } 
+      
+      if (cartItem.amount < 2) {
+          removeFromCart(id);
+      }
   }
 
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, increaseAmount, decreaseAmount }}>{children}</CartContext.Provider>
   );
 };
