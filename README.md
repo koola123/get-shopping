@@ -10,7 +10,8 @@ The user can change the quantity, add new items to the cart or delete items whic
 - Deleting items from the shopping cart.
 - Open the Product Details view for a specific item.
 
-## D E M O (npm install Node Modules after cloning the repo / npm i parcel -g to run on the client side)
+## D E M O ( npm install Node Modules after cloning the repo )
+Install Parcel "npm i parcel -g" to run the app on the client side
 
 ```
 👉🏻 Run the app on localhost:1234
