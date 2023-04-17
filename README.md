@@ -1,4 +1,4 @@
-# GetShopping 🚀
+# Ecommerce-shopping-cart
 
 GetShopping is a e-commerce frontend solution that shows exactly how fashion items can be added to an online shopping cart.
 The user can change the quantity, add new items to the cart or delete items which will affect the total sum.
@@ -14,7 +14,7 @@ The user can change the quantity, add new items to the cart or delete items whic
 Install Parcel "npm i parcel -g" to run the app on the client side
 
 ```
-👉🏻 Run the app on localhost:1234
+http://localhost:1234
 ```
 
 ## Technical Requirements
@@ -27,25 +27,11 @@ Install Parcel "npm i parcel -g" to run the app on the client side
 - The app displays well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.
 - The app uses the Fakestore API.
 
-## Source
+## Link to API
 
 ``` 
 https://fakestoreapi.com/ 
 ```
 
 
-## Future improvements
-* Implement a payment process (EC-Card, CreditCard, Paypal).
-* Login and Logout function.
-* Replacing the fake API with a real database.
 
-
-
-#### Author
-
-Matthias Müringer
-
-
-#### Version
-
-1.0.0
