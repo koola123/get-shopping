@@ -1,7 +1,6 @@
 # Ecommerce-shopping-cart
 
-GetShopping is a e-commerce frontend solution that shows exactly how fashion items can be added to an online shopping cart.
-The user can change the quantity, add new items to the cart or delete items which will affect the total sum.
+Add new items to the shopping cart, change the quantity or delete items. It also shows the total purchase amount and links to a separate product view.   
 
 ## Key Features
 
