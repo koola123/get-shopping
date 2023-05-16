@@ -1,7 +1,6 @@
-# GetShopping 🚀
+# Ecommerce-shopping-cart
 
-GetShopping is a ecommerce frontend solution that shows how selected fashion items can be added to an online shopping cart.
-The user can change the quantity at any time, add new items or delete items which affects the total purchase amount.
+Add new items to the shopping cart, change the quantity or delete items. It also shows the total purchase amount and links to a separate product view.   
 
 ## Key Features
 
@@ -10,10 +9,11 @@ The user can change the quantity at any time, add new items or delete items whic
 - Deleting items from the shopping cart.
 - Open the Product Details view for a specific item.
 
-## D E M O (npm install Node Modules after cloning the repo)
+## D E M O ( npm install Node Modules after cloning the repo )
+Install Parcel "npm i parcel -g" to run the app on the client side
 
 ```
-👉🏻 Run the app on localhost:1234
+http://localhost:1234
 ```
 
 ## Technical Requirements
@@ -26,25 +26,11 @@ The user can change the quantity at any time, add new items or delete items whic
 - The app displays well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.
 - The app uses the Fakestore API.
 
-## Source
+## Link to API
 
 ``` 
 https://fakestoreapi.com/ 
 ```
 
 
-## Future improvements
-* Implement a payment process (EC-Card, CreditCard, Paypal).
-* Login and Logout function.
-* Replacing the fake API with a real database.
 
-
-
-#### Author
-
-Matthias Müringer
-
-
-#### Version
-
-1.0.0
