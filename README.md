@@ -16,7 +16,7 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 
 <b>[LIVE DEMO](https://get-shopping.netlify.app/)</b>
 
-## Key Features
+## Key Features:
 
 - Adding specific items to the shopping cart.
 - Changing the number of total items in the shopping cart.
@@ -24,6 +24,8 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 - Open the Product Details view for a specific item.
 
 ## 🛠 Installation: 
+
+Prerequisites
 
 <br>
 
@@ -43,7 +45,7 @@ http://localhost:1234
 
 <br>
 
-## Technical Requirements
+## Technical Requirements:
 
 - The app is a React application.
 - The app is run with Parcel: A Build Tool.
@@ -55,7 +57,7 @@ http://localhost:1234
 
 <br>
 
-## Link to API
+## Link to API:
 
 ``` 
 https://fakestoreapi.com/ 
