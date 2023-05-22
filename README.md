@@ -14,14 +14,12 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 
 <br>
 
-<b>[LIVE DEMO](https://get-shopping.netlify.app/)</b>
-
 ## Key Features:
 
-- Adding specific items to the shopping cart.
-- Changing the number of total items in the shopping cart.
-- Deleting items from the shopping cart.
-- Open the Product Details view for a specific item.
+- As a User, I want to be able to add specific items to the shopping cart.
+- As a User, I want to change the number of total items in the shopping cart.
+- As a User, it is possible to delete items directly from the shopping cart.
+- As a User, I can also check the product details view for any item.
 
 ## 🛠 Installation: 
 
@@ -38,7 +36,7 @@ npm install
 ```
 <br>
 
-The run the following commands in terminal:
+Run parcel in terminal:
 ```
 http://localhost:1234
 ```
@@ -58,6 +56,8 @@ http://localhost:1234
 <br>
 
 ## Link to API:
+
+This project makes use of the Fakestore API for receiving the product data.
 
 ``` 
 https://fakestoreapi.com/ 
