@@ -14,6 +14,8 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 
 <br>
 
+<b>[LIVE DEMO](https://get-shopping.netlify.app/)</b>
+
 ## Key Features
 
 - Adding specific items to the shopping cart.
