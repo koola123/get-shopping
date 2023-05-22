@@ -1,6 +1,18 @@
 # Ecommerce-shopping-cart
 
-Add new items to the shopping cart, change the quantity or delete items. It also shows the total purchase amount and links to a separate product view.   
+Add new items to the shopping cart, change the quantity or delete items. It also shows the total purchase amount and links to a separate product view.
+
+<br>
+
+<strong>[LIVE DEMO](https://get-shopping.netlify.app/)</strong>
+
+<br>
+
+<img src="src/img/get-shopping1.png" with="768px"/>
+<img src="src/img/get-shopping2.png" with="768px"/>
+<img src="src/img/get-shopping3.png" with="768px"/>
+
+<br>
 
 ## Key Features
 
@@ -9,12 +21,25 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 - Deleting items from the shopping cart.
 - Open the Product Details view for a specific item.
 
-## D E M O ( npm install Node Modules after cloning the repo )
-Install Parcel "npm i parcel -g" to run the app on the client side
+## 🛠 Installation: 
 
+<br>
+
+Run `npm i parcel -g` to install parcel globally.
+
+```
+git clone https://github.com/koola123/get-shopping.git
+cd get-shopping
+npm install
+```
+<br>
+
+The run the following commands in terminal:
 ```
 http://localhost:1234
 ```
+
+<br>
 
 ## Technical Requirements
 
@@ -26,11 +51,15 @@ http://localhost:1234
 - The app displays well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.
 - The app uses the Fakestore API.
 
+<br>
+
 ## Link to API
 
 ``` 
 https://fakestoreapi.com/ 
 ```
+
+Version 1.0.0
 
 
 
