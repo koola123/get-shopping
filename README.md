@@ -29,7 +29,7 @@ https://fakestoreapi.com/
 
 ## 🛠 Installation: 
 
-Prerequisites
+<strong>Prerequisites</strong>
 
 <br>
 
