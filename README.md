@@ -8,9 +8,9 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 
 <br>
 <p align-right>
-<img src="src/img/get-shopping1.png" with="150px"/>
-<img src="src/img/get-shopping2.png" with="150px"/>
-<img src="src/img/get-shopping3.png" with="150px"/>
+<img src="src/img/get-shopping1.png" with="400px"/>
+<img src="src/img/get-shopping2.png" with="400px"/>
+<img src="src/img/get-shopping3.png" with="400px"/>
 </p>
 
 ## Technology used:
