@@ -1,4 +1,4 @@
-# Ecommerce-shopping-cart
+# Online shopping cart
 
 Add new items to the shopping cart, change the quantity or delete items. It also shows the total purchase amount and links to a separate product view.
 
