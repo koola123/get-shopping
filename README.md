@@ -13,7 +13,7 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 <img src="src/img/get-shopping3.png" with="400px"/>
 </p>
 
-# Technology stack:
+# 🎯 Technology stack:
 - React
 - React useContext API
 - React hooks
