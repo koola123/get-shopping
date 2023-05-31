@@ -13,7 +13,7 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 <img src="src/img/get-shopping3.png" with="400px"/>
 </p>
 
-# 🎯 Technology stack:
+# Technology stack:
 - React
 - React useContext API
 - React hooks
@@ -21,13 +21,13 @@ Add new items to the shopping cart, change the quantity or delete items. It also
 - Parcel
 - Fully mobile responsive
 
-# Link to API:
+## Link to API:
 This project makes use of the Fakestore API for receiving the product data.
 ``` 
 https://fakestoreapi.com/ 
 ```
 
-# 🛠 Installation: 
+## 🛠 Installation: 
 
 <strong>Prerequisites</strong>
 
